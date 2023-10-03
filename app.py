@@ -87,7 +87,7 @@ def theclue():
     if true == answer:
         return render_template("thehut.html")
     else:
-        return apology("wrong answer", 403)
+        return render_template("theclue.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
